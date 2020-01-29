@@ -1,6 +1,6 @@
 body {
 	font: 16px Helvetica, Sans-Serif;
-	background-color: powder-blue;
+	background-color: #e1f7f8;
 	
 }
 
@@ -41,7 +41,7 @@ body {
 
 #content-professionalheader {
 	font-size: 26px;
-	border-bottom: 1px solid #999;
+	border-bottom: 2px solid #999;
 }
 
 h2 {
