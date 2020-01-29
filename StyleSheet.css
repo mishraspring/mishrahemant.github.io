@@ -43,6 +43,9 @@ body {
 	font-size: 28px;
 }
 
+h2 {
+  font-size: 1.25em;
+}
 .date {
 	float: right;
 }
