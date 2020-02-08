@@ -1,5 +1,16 @@
 
+$('#cmd2').click(function() {
+  	var options = {
+		//'width': 800,
+  	};
+  	var pdf = new jsPDF('p', 'pt', 'a4');
+  	pdf.addHTML($("#content2"), -1, 220, options, function() {
+    	pdf.save('admit_card.pdf');
+  	});
+});
+
 <!DOCTYPE html>
+
 <html>
 <head>
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
