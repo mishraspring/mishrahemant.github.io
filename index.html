@@ -35,6 +35,39 @@ img:{
 	    Email: hkumar@umn.edu, hemantkmishra@gmail.com</br>
             Phone: 612-226-4672</div>
  <a href="https://restpack.io/html2pdf/save-as-pdf" target="_blank">Save this page as PDF</a>
+window.onload = function(){
+  function findID(id) { //function to make 'getElementById easier to maintain;
+    return document.getElementById(id);
+  }
+  
+  var calculator = {
+    multOne: findID('mult-one'), 
+    multTwo: findID('mult-two'),
+    product: findID('product'),
+    calculate: findID('calculate'),
+    clear: findID('clear')
+  };
+  
+  // Onclick Events for buttons
+  calculator.clear.onclick = function() {
+    calculator.multOne.value = '';
+    calculator.multTwo.value = '';
+    calculator.product.value = 'Ready...';
+    console.log(result = 0);
+  }
+
+  calculator.calculate.onclick = function() {
+    var result = calculator.multOne.value * calculator.multTwo.value;
+    
+    console.log(result);
+    
+    if(isNaN(result)) {
+      calculator.product.value = 'Not Valid - Try Again!!'}
+    else {
+    calculator.product.value = result;
+    }
+  };
+}
     <div id="content-body">
    <div id="content-summary">
    <div id="content-summarycontent">
@@ -384,7 +417,5 @@ The goal of this project is to block CD16a shedding in NK cells enhance their in
       <input type="text" id="product" value="0">
         <button type="button" id="calculate">Calculate</button>
         <button type="button" id="clear">Clear</button>
-        
-      </form>
-   
+           
 </html>
