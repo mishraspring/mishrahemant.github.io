@@ -19,12 +19,22 @@ img:{
   <div id="container">
 
     <img src="https://github.com/mishrahemant/mishrahemant.github.io/blob/master/HKM_Headshot.jpeg?raw=true" id="pic">
-  <div>
-    <input type="search" id="mySearch" name="q"
-     placeholder="Search the site..."
-     aria-label="Search through site content">
-    <button>Search</button>
-  </div>
+ <ul class="searchListUl">
+   <li>
+      <form>
+         <input type="text" class="search" placeholder="Keywords" required>
+            <select class="region">
+                <option value="1" selected>example</option>
+                <option value="2">example</option>
+            </select>
+            <select class="department">
+                <option value="a" selected>All Departments</option>
+                <option value="b">Computing</option>
+            </select>
+         <input type="submit" class="button" value="Search">
+      </form>
+   </li>
+</ul>
 
     <div id="content-contact">Hemant K Mishra, MS, Ph.D.</div> 
   <div>
