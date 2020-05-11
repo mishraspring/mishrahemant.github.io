@@ -8,11 +8,6 @@
 <title>Hemant K Mishra</title>	
 <link rel="stylesheet" type="text/css" href="StyleSheet.css">
 	
-	<script type="text/javascript">
-    document.getElementById("myButton").onclick = function () {
-        location.href = "https://github.com/mishrahemant/mishrahemant.github.io/blob/master/Publications.html";
-    };
-</script>
 </head>
 <style>
 img:{
@@ -21,6 +16,11 @@ img:{
 </style>
 
 <body>
+<script>
+function myFunction() {
+  location.replace("https://github.com/mishrahemant/mishrahemant.github.io/blob/master/Publications.html")
+}
+</script>
 
   <div id="container">
 
@@ -63,7 +63,7 @@ img:{
     <a href="https://www.linkedin.com/in/hemantkmishra/">LinkedIn Profile</a> </div>
       </div>
 	    
-	    <div>    <button id="myButton" class="float-left submit-button" >Publication</button> </div>
+	    <div>    <button onclick="myFunction()" id="btnPublication">Publication</button> </div>
 
 
   <div id="content-professional"> 
