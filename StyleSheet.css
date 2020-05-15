@@ -16,7 +16,16 @@ body {
 	border-radius: 15px;
 	height: 100px;
 }
+.box{
+    display: none;
+    width: 100%;
+}
 
+a:hover + .box,.box:hover{
+    display: block;
+    position: relative;
+    z-index: 100;
+}
 #container {
 	width: 950px;
 	margin: 40px auto 60px;
