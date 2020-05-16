@@ -1,7 +1,9 @@
-
-   <html>
+<!DOCTYPE html>
+<html>
 <head>
-</head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+   
 <body>
 <div style="text-align:center" onmouseover="Play()" onmouseout="Pause()"> 
   <video id="video1" width="480">
