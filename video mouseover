@@ -2,7 +2,7 @@
    <html>
 <head>
 </head>
-<body>
+<body><p>test</p>
 <div style="text-align:center" onmouseover="Play()" onmouseout="Pause()"> 
   <video id="video1" width="480">
     <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4" />
